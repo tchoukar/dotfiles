@@ -11,6 +11,7 @@
 
 [core]
   pager = less -FRSX
+	editor = subl -n -w  >/dev/null 2>&1
 
 [alias]
   co = checkout
@@ -48,3 +49,6 @@
 
 [pull]
   rebase = false
+[user]
+	email = cd ~/code/$tchoukar/dotfiles && zsh git_setup.sh
+	name = cd ~/code/$GITHUB_USERNAME/dotfiles && zsh git_setup.sh
